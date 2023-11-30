@@ -1,0 +1,164 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="description" content="SAG-AFTRA STRIKE">
+	<meta name="keywords" content="SAG-AFTRA,strike,writers">
+	<meta name="author" content="Josua Martinez">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="CSS/ImpactCSS.css">
+    <title>Writers Strike</title>
+</head>
+
+<body>
+
+
+<main>
+
+
+<!-- Navigation Bar-->
+
+<div class="header-banner">
+
+<nav>
+  <span class="underline"></span>
+  <span class="underline"></span>
+  <span class="underline"></span>
+  <a onClick="ul(0)" href="index.html">Home</a>
+  <a onClick="ul(1)" href="AboutPage.html">About</a>
+  <a onClick="ul(2)" href="Impact&Implications.html">Impact</a>
+  <a onClick="ul(3)" href="SolutionsPage.html">Solutions</a>
+  <a onClick="ul(4)" href="SupportPage.html">Support</a>
+</nav>
+
+<!--layout-->
+ 
+
+<section>
+  
+    <h1>Major Implications</h1>
+    <p>Two key factors played a central role in the strike: the rise of streaming platforms and the increasing use of artificial intelligence (AI) in the entertainment sector.
+
+</p>
+    <p>Streaming platforms have transformed the way content is produced and distributed. 
+Traditional compensation models, which involved residuals for actors and writers whenever a show was rerun or sold to a different broadcaster,
+ have been disrupted by streaming giants like Netflix. They introduced buy-out deals, providing a one-time lump sum to talent for their work, 
+ essentially eliminating the residual income that was once a significant part of actors' earnings. SAG-AFTRA, during negotiations, successfully 
+ secured a 100 percent bump in performance compensation bonuses for actors working on hit streaming series and movies. This landmark change ensures 
+ that the creators receive a more equitable share of the profits when their work achieves certain viewership thresholds, effectively 
+pushing streaming platforms to share their success with the artists who contribute to their content.</p>
+
+</section>
+
+<h2>Opinion of entertainment-industry professionals about the role of artificial intelligence in the writers strike in the United States as of May 2023</h2>
+
+
+<div class="center">
+
+<img src="IMG/Charts.jpg" ></img>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="footer">
+<div class="row">
+
+<h3>
+
+<a href="#"><i class="fa fa-facebook"></i></a>
+<a href="#"><i class="fa fa-instagram"></i></a>
+<a href="#"><i class="fa fa-youtube"></i></a>
+<a href="#"><i class="fa fa-twitter"></i></a>
+</div>
+
+<div class="row">
+<ul>
+<li><a href="#">Contact us</a></li>
+<li><a href="#">Our Services</a></li>
+<li><a href="#">Career</a></li>
+</ul>
+</div>
+
+</div>
+
+
+</h3>
+
+</footer>
+  
+  
+</main> 
+
+</body>
+</html>
+
+
+
+<!--SCRIPTS-->
+  
+<script>
+  // Function to add/remove the sticky class based on scroll position
+  function stickyNavigation() {
+    const nav = document.querySelector('nav');
+    const navOffset = nav.offsetTop;
+
+    if (window.pageYOffset >= navOffset) {
+      nav.classList.add('sticky');
+    } else {
+      nav.classList.remove('sticky');
+    }
+  }
+
+  // Event listener for scroll, calling the stickyNavigation function
+  window.addEventListener('scroll', stickyNavigation);
+</script>
+
+
+<script>
+function ul(index) {
+    console.log('click!' + index)
+    
+    var underlines = document.querySelectorAll(".underline");
+
+    for (var i = 0; i < underlines.length; i++) {
+        underlines[i].style.transform = 'translate3d(' + index * 100 + '%,0,0)';
+    }
+}
+
+</script>
+
+<script>
+/* ========================================== 
+scrollTop() >= 300
+Should be equal the the height of the header
+========================================== */
+
+$(window).scroll(function(){
+    if ($(window).scrollTop() >= 300) {
+        $('nav').addClass('fixed-header');
+        $('nav div').addClass('visible-title');
+    }
+    else {
+        $('nav').removeClass('fixed-header');
+        $('nav div').removeClass('visible-title');
+    }
+});
+
+
+<!-- Left Section -->
+<div class="left">
+
+  <p>
+</script>

@@ -1,0 +1,268 @@
+body {
+  background-color: white;
+  display: grid;
+  grid-template-rows: auto 1fr auto; 
+  
+}
+
+main {
+  display: grid;
+  height: 70vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-banner {
+    position: static; /* Set position to relative */
+    background-color: #000;
+    background-image: ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 850px;
+   text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-align: left; /* Align text to the left */
+    overflow: hidden; /* Hide overflowing gradient */
+}
+
+
+.header-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+
+}
+
+/* Basic section style */
+section {
+  padding: 50px; /* Adjust padding as needed */
+  background-color: #f9f9f9; /* Background color */
+  border-radius: 10px; /* Rounded corners */
+   /* Box shadow for depth */
+
+  /* Center content in the section */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Align content vertically */
+
+  /* Text styles */
+  text-align: center;
+  color: #333; /* Text color */
+  font-family: 'Arial', sans-serif; /* Font family */
+}
+
+/* Hover effect for section */
+section:hover {
+  transform: translateY(-5px); /* Move section slightly up on hover */
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+
+
+
+/*Navigation Bar*/
+:root {
+    --underline-height: .5em;
+    --transition-duration: .5s;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+nav {
+    position: relative;
+    white-space: nowrap;
+    background: #CCBB44;
+   
+   
+}
+
+.underline {
+    display: block;
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    left: 0;
+    height: var(--underline-height);
+    width: 20%;
+    background: black;
+    pointer-events: none;
+    mix-blend-mode: multiply;
+    transition: transform var(--transition-duration) ease-in-out;
+}
+
+.underline:nth-child(1) {
+    background: yellow;
+    transition: calc(var(--transition-duration) * .8);
+}
+
+.underline:nth-child(2) {
+    background: cyan;
+    transition: calc(var(--transition-duration) * 1.2);
+}
+
+.underline:nth-child(3) {
+    background: magenta;
+}
+
+a {
+    display: inline-block;
+    z-index: 10;
+    width: 20%;
+    padding: 1em 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+nav.black .underline {
+    background: #222;
+    border-radius: .25em;
+    height: calc(var(--underline-height) / 2);
+    mix-blend-mode: initial;
+}
+
+nav.full {
+    font-weight: bold;
+    background: #111;
+    color: white;
+}
+
+nav.full .underline {
+    height: 100%;
+    background: blue;
+}
+
+nav.retro .underline {
+    border-radius: 100% 100% 0 0;
+}
+
+nav.retro .underline:nth-child(1) {
+    background: neonblue;
+}
+
+nav.retro .underline:nth-child(2) {
+    background: dodgerblue;
+}
+
+nav.retro .underline:nth-child(3) {
+    background: tomato;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*layouts*/
+
+  article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  height: 300px;
+   position: relative;
+   
+ 
+    padding: 50px;
+    font-size: 24px;
+	
+ }
+
+
+
+/* Footer Styles */
+.footer {
+  background: #000;
+  
+   left: 0;
+   bottom: 0;
+   width: 100%;
+  
+   color: white;
+   text-align: center;
+}
+
+.footer .row {
+  width: 100%;
+  margin: 1% 0%;
+  overflow-x: hidden;
+  color: white; 
+  font-size: 0.8em;
+}
+
+.footer .row a {
+  text-decoration: none;
+  color: gray;
+  transition: 0.5s;
+}
+
+.footer .row a:hover {
+  color: #fff;
+}
+
+.footer .row ul {
+  width: 100%;
+}
+
+.footer .row ul li {
+  display: inline-block;
+  margin: 0px 20px; 
+}
+
+.footer .row a i {
+  font-size: 1.5em; 
+  margin: 0 5px; 
+}
+
+
+@media (max-width: 720px) {
+  .footer {
+    text-align: left;
+    padding: 10px; 
+  }
+  .footer .row ul li {
+    display: block;
+    margin: 10px 0; 
+    text-align: left;
+  }
+  .footer .row a i {
+    margin: 0 5px; 
+  }
+}
+
+
+
+
+
+
+

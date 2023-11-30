@@ -1,0 +1,383 @@
+
+body {
+	background-color: black;
+	display: grid;
+    
+   
+	}
+	
+main {
+  display: grid;
+  
+  height: 70vh;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+
+/*Navigation Bar*/
+:root {
+    --underline-height: .5em;
+    --transition-duration: .5s;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+nav {
+    position: relative;
+    white-space: nowrap;
+    background: #CCBB44;
+   
+   
+}
+
+.underline {
+    display: block;
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    left: 0;
+    height: var(--underline-height);
+    width: 20%;
+    background: black;
+    pointer-events: none;
+    mix-blend-mode: multiply;
+    transition: transform var(--transition-duration) ease-in-out;
+}
+
+.underline:nth-child(1) {
+    background: yellow;
+    transition: calc(var(--transition-duration) * .8);
+}
+
+.underline:nth-child(2) {
+    background: cyan;
+    transition: calc(var(--transition-duration) * 1.2);
+}
+
+.underline:nth-child(3) {
+    background: magenta;
+}
+
+a {
+    display: inline-block;
+    z-index: 10;
+    width: 20%;
+    padding: 1em 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+nav.black .underline {
+    background: #222;
+    border-radius: .25em;
+    height: calc(var(--underline-height) / 2);
+    mix-blend-mode: initial;
+}
+
+nav.full {
+    font-weight: bold;
+    background: #111;
+    color: white;
+}
+
+nav.full .underline {
+    height: 100%;
+    background: blue;
+}
+
+nav.retro .underline {
+    border-radius: 100% 100% 0 0;
+}
+
+nav.retro .underline:nth-child(1) {
+    background: neonblue;
+}
+
+nav.retro .underline:nth-child(2) {
+    background: dodgerblue;
+}
+
+nav.retro .underline:nth-child(3) {
+    background: tomato;
+}
+
+
+/* Banner*/
+
+
+/* Existing CSS */
+
+
+.header-banner {
+    position: static; /* Set position to relative */
+    background-color: #333;
+    background-image: url('https://deadline.com/wp-content/uploads/2023/11/hollywood-strike.jpg?w=681&h=383&crop=1');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 850px;
+   text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-align: left; /* Align text to the left */
+    overflow: hidden; /* Hide overflowing gradient */
+}
+
+
+.header-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box; 
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent); 
+}
+
+
+.header-banner article {
+    width: 70%; /* Adjust the width of the text container */
+    padding: 16px;
+    color: white;
+    font-family: Arial, sans-serif; /* Choose your desired font */
+	
+}
+
+.header-banner h1 {
+    font-size: 3em; /* Adjust the font size */
+    margin-bottom: 10px;
+	margin-top: 3rem;
+	text-shadow: 1px 1px 2px black;
+}
+
+.header-banner p {
+    font-size: 1.2em; /* Adjust the font size */
+    line-height: 1.5;
+	margin-top: 3rem;
+	text-shadow: 1px 1px 2px black;
+	
+}
+
+/*layouts*/
+
+  article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  height: 300px;
+   position: relative;
+   
+ 
+    padding: 50px;
+    font-size: 24px;
+	
+ }
+
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+
+.footer{
+  
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #000;
+   color: white;
+   text-align: center;
+}
+
+.footer .row{
+width:100%;
+margin:1% 0%;
+overflow-x: hidden;
+color:black;
+font-size:0.8em;
+}
+
+.footer .row a{
+text-decoration:none;
+color:gray;
+transition:0.5s;
+}
+
+.footer .row a:hover{
+color:#fff;
+}
+
+.footer .row ul{
+width:100%;
+}
+
+.footer .row ul li{
+display:inline-block;
+margin:0px 50px;
+}
+
+.footer .row a i{
+font-size:2em;
+margin:0% 10%;
+}
+
+@media (max-width:720px){
+.footer{
+text-align:left;
+padding:10%;
+}
+.footer .row ul li{
+display:block;
+margin:50px 0px;
+text-align:left;
+}
+.footer .row a i{
+margin:0% 10%;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*SAGDesign*/
+
+.left {
+  mix-blend-mode: multiply;
+  width: 30%;
+  line-height: 1.5em;
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+}
+
+.right {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+
+h2 {
+  font-size: 7em;
+  text-transform: uppercase;
+  letter-spacing: -.1em;
+  position: fixed;
+  transform: rotate(-90deg) translate(30%, -40%);
+  transform-origin: left;
+  mix-blend-mode: multiply;
+}
+
+/* Colors */
+.blue {
+  color: #0091E5;
+}
+
+.red {
+  color: #E42149;
+}
+
+.yellow {
+  color: #FFF146;
+}
+
+.first {
+  transform: rotate(-90deg) translate(70%, -30%);
+}
+
+.second {
+  transform: rotate(-90deg) translate(72.5%, -30%);
+}
+
+.third {
+  transform: rotate(-90deg) translate(75%, -30%);
+}
+
+/*SAGDesign 2*/
+
+.left {
+  mix-blend-mode: multiply;
+  width: 30%;
+  line-height: 1.5em;
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+}
+
+.right {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+
+h3 {
+  font-size: 7em;
+  text-transform: uppercase;
+  letter-spacing: -.1em;
+  position: fixed;
+  transform: rotate(-90deg) translate(30%, -40%);
+  transform-origin: left;
+  mix-blend-mode: multiply;
+}
+
+/* Colors */
+.blue {
+  color: #0091E5;
+}
+
+.red {
+  color: #E42149;
+}
+
+.yellow {
+  color: #FFF146;
+}
+
+.first {
+  transform: rotate(-90deg) translate(70%, -30%);
+}
+
+.second {
+  transform: rotate(-90deg) translate(72.5%, -30%);
+}
+
+.third {
+  transform: rotate(-90deg) translate(75%, -30%);
+}

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="description" content="SAG-AFTRA STRIKE">
+	<meta name="keywords" content="SAG-AFTRA,strike,writers">
+	<meta name="author" content="Josua Martinez">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="CSS/HomePageCSS.css">
+    <title>Writers Strike</title>
+</head>
+
+<body>
+
+
+<main>
+
+
+<!-- Navigation Bar-->
+
+<div class="header-banner">
+
+<nav>
+  <span class="underline"></span>
+  <span class="underline"></span>
+  <span class="underline"></span>
+  <a onClick="ul(0)" href="index.html">Home</a>
+  <a onClick="ul(1)" href="AboutPage.html">About</a>
+  <a onClick="ul(2)" href="Impact&Implications.html">Impact</a>
+  <a onClick="ul(3)" href="SolutionsPage.html">Solutions</a>
+  <a onClick="ul(4)" href="SupportPage.html">Support</a>
+</nav>
+
+<!--layout-->
+ 
+
+<section>
+  <article>
+    <h1>SAG-AFTRA</h1>
+    <p>In 2023, the SAG-AFTRA strike reshaped entertainment, demanding fair wages and better conditions. It united voices, sparking a vital conversation 
+	about artists' rights and equality in the industry. This pivotal moment redefined the future of creativity and respect in entertainment.</p>
+    <p>Emboldened by unity, the aftermath ushered in a new era. Its reverberating impact rippled through entertainment, fostering an environment of fairness and inclusivity. 
+	This seismic shift continues to illuminate a path forward, empowering artists and amplifying their voices in a redefined landscape of creativity and respect</p>
+  </article>
+</section>
+
+
+
+
+
+
+
+  </div>
+
+<!-- Right Section -->
+<div class="right">
+  <!-- Three Different Colored Texts -->
+  <h2 class="blue first">SAG</h2>
+  <h2 class="red second">SAG</h2>
+  <h2 class="yellow third">SAG</h2>
+</div>
+
+
+
+
+
+ </section>
+
+
+
+ <footer>
+
+
+<div class="footer">
+<div class="row">
+
+<h3>
+
+<a href="#"><i class="fa fa-facebook"></i></a>
+<a href="#"><i class="fa fa-instagram"></i></a>
+<a href="#"><i class="fa fa-youtube"></i></a>
+<a href="#"><i class="fa fa-twitter"></i></a>
+</div>
+
+<div class="row">
+<ul>
+<li><a href="#">Contact us</a></li>
+<li><a href="#">Our Services</a></li>
+<li><a href="#">Career</a></li>
+</ul>
+</div>
+
+</div>
+
+
+</h3>
+
+</footer>
+  
+  
+</main>  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--SCRIPTS-->
+  
+<script>
+  // Function to add/remove the sticky class based on scroll position
+  function stickyNavigation() {
+    const nav = document.querySelector('nav');
+    const navOffset = nav.offsetTop;
+
+    if (window.pageYOffset >= navOffset) {
+      nav.classList.add('sticky');
+    } else {
+      nav.classList.remove('sticky');
+    }
+  }
+
+  // Event listener for scroll, calling the stickyNavigation function
+  window.addEventListener('scroll', stickyNavigation);
+</script>
+
+
+<script>
+function ul(index) {
+    console.log('click!' + index)
+    
+    var underlines = document.querySelectorAll(".underline");
+
+    for (var i = 0; i < underlines.length; i++) {
+        underlines[i].style.transform = 'translate3d(' + index * 100 + '%,0,0)';
+    }
+}
+
+</script>
+
+<script>
+/* ========================================== 
+scrollTop() >= 300
+Should be equal the the height of the header
+========================================== */
+
+$(window).scroll(function(){
+    if ($(window).scrollTop() >= 300) {
+        $('nav').addClass('fixed-header');
+        $('nav div').addClass('visible-title');
+    }
+    else {
+        $('nav').removeClass('fixed-header');
+        $('nav div').removeClass('visible-title');
+    }
+});
+
+
+<!-- Left Section -->
+<div class="left">
+
+  <p>
+</script>
+
+
+
+
+
+
+</body>
+</html>

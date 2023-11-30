@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="description" content="SAG-AFTRA STRIKE">
+	<meta name="keywords" content="SAG-AFTRA,strike,writers">
+	<meta name="author" content="Josua Martinez">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="CSS/AboutPageCSS.css">
+    <title>Writers Strike</title>
+</head>
+
+<body>
+
+
+<main>
+
+
+<!-- Navigation Bar-->
+
+<div class="header-banner">
+
+<nav>
+  <span class="underline"></span>
+  <span class="underline"></span>
+  <span class="underline"></span>
+  <a onClick="ul(0)" href="index.html">Home</a>
+  <a onClick="ul(1)" href="AboutPage.html">About</a>
+  <a onClick="ul(2)" href="Impact&Implications.html">Impact</a>
+  <a onClick="ul(3)" href="SolutionsPage.html">Solutions</a>
+  <a onClick="ul(4)" href="SupportPage.html">Support</a>
+</nav>
+
+<!--layout-->
+<div class="header-banner">
+
+<section class="Section">
+
+    <div>
+      <div class="heading_container heading_center">
+	 
+        <h1>
+          About <span>Us</span>
+        </h1>
+        <p>
+         SAG-AFTRA represents approximately 160,000 actors, announcers, broadcast journalists, dancers, DJs, news writers, news editors, program hosts, puppeteers, recording artists, singers, stunt performers, voiceover artists and other media professionals.
+        </p>
+      </div>
+      <div>
+     
+        <div>
+          <div >
+            <h3>
+              We Are Writers
+            </h3>
+            <p>
+SAG-AFTRA members are the faces and voices that entertain and inform America and the world. With national offices in Los Angeles and New York, and local offices nationwide, SAG-AFTRA members work together to secure the strongest protections for media artists into the 21st century and beyond.</p>
+<h2>Mission Statement</h2>
+<p>SAG-AFTRA brings together two great American labor unions: 
+Screen Actors Guild and the American Federation of Television and Radio Artists. Both were formed in the turmoil of the 1930s, 
+with rich histories of fighting for and securing the strongest protections for media artists. Our members united to form the successor 
+union in order to preserve those hard-won rights and to continue the struggle to extend and expand those protections into the 21st 
+century and beyond. We are actors, announcers, broadcast journalists, dancers, dj’s, news writers, news directors, program hosts, puppeteers,
+ recording artists, singers, stunt performers, voiceover artists and other media professionals. Our work is seen and heard in theaters, on 
+ television and radio, sound recordings, the internet, games, mobile devices, home video: you see us and hear us on all media distribution platforms. 
+ We are the faces and the voices that entertain and inform America and the world.
+            </p>
+      
+          </div>
+        </div>
+      </div>
+    </div>
+
+</section>
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+ </section>
+
+</main>
+
+ <footer>
+
+
+<div class="footer">
+<div class="row">
+
+<h3>
+
+<a href="#"><i class="fa fa-facebook"></i></a>
+<a href="#"><i class="fa fa-instagram"></i></a>
+<a href="#"><i class="fa fa-youtube"></i></a>
+<a href="#"><i class="fa fa-twitter"></i></a>
+</div>
+
+<div class="row">
+<ul>
+<li><a href="#">Contact us</a></li>
+<li><a href="#">Our Services</a></li>
+<li><a href="#">Career</a></li>
+</ul>
+</div>
+
+</div>
+
+
+</h3>
+
+</footer>
+  
+  
+</main>  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--SCRIPTS-->
+  
+<script>
+  // Function to add/remove the sticky class based on scroll position
+  function stickyNavigation() {
+    const nav = document.querySelector('nav');
+    const navOffset = nav.offsetTop;
+
+    if (window.pageYOffset >= navOffset) {
+      nav.classList.add('sticky');
+    } else {
+      nav.classList.remove('sticky');
+    }
+  }
+
+  // Event listener for scroll, calling the stickyNavigation function
+  window.addEventListener('scroll', stickyNavigation);
+</script>
+
+
+<script>
+function ul(index) {
+    console.log('click!' + index)
+    
+    var underlines = document.querySelectorAll(".underline");
+
+    for (var i = 0; i < underlines.length; i++) {
+        underlines[i].style.transform = 'translate3d(' + index * 100 + '%,0,0)';
+    }
+}
+
+</script>
+
+<script>
+/* ========================================== 
+scrollTop() >= 300
+Should be equal the the height of the header
+========================================== */
+
+$(window).scroll(function(){
+    if ($(window).scrollTop() >= 300) {
+        $('nav').addClass('fixed-header');
+        $('nav div').addClass('visible-title');
+    }
+    else {
+        $('nav').removeClass('fixed-header');
+        $('nav div').removeClass('visible-title');
+    }
+});
+
+
+<!-- Left Section -->
+<div class="left">
+
+  <p>
+</script>
+
+
+
+
+
+
+
+</body>
+</html>
